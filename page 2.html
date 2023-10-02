@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome To Login Form</title>
+  <link rel="stylesheet" href="page 2.css">
+</head>
+
+<body>
+
+  <!--  -->
+  <header id="head">
+    <a href="page 1.html"><img src="https://c.gitcoin.co/grants/cc8d06a5cb8368a631255c564e717511/library-logo.png"
+        id="logo1"></a>
+    <h2><a href="page 1.html" id="name1">Reader</a></h2>
+  </header>
+  <!--  -->
+
+  <!-- Main div code -->
+  <div id="main">
+
+    <!--  -->
+    <div id="con-logo"><br>
+      <a href="page 1.html"><img src="https://c.gitcoin.co/grants/cc8d06a5cb8368a631255c564e717511/library-logo.png"
+          id="logo2"></a>
+      <label><a href="page 1.html" id="name2">Reader</a></label><br><br>
+    </div>
+    <!--  -->
+
+    <div class="h-tag">
+    </div>
+    <!-- Login box -->
+    <div class="login">
+
+      <label for="email" id="usernm">Username :</label>
+      <input type="text" placeholder="Enter user name here" id="email" class="inp" />
+      <label class="error" id="err1">Enter your full name</label><br><br>
+
+      <label for="pwd1" id="pass1">Password :</label>
+      <button id="show-p">Show</button>
+      <input type="password" placeholder="Enter Password here" id="pwd1" class="inp" />
+      <label class="error" id="err2">Enter.your.password</label><br><br>
+
+
+      <label for="list" id="gender">Gender :</label>
+      <input list="list" placeholder="Choose" class="inp" id="in-gender" style="cursor: default;">
+      <datalist id="list">
+        <option value="male"></option>
+        <option value="female"></option>
+      </datalist>
+
+      <input type="submit" value="Login" id="btn1" onClick="login()" />
+      <input type="submit" value="Reset" onclick="clearFunc()" id="btn2" />
+
+    </div>
+    <!-- login box div ending here.. -->
+  </div>
+  <!-- Main div ending here... -->
+  <script src="page 2.JS"></script>
+</body>
+
+</html>

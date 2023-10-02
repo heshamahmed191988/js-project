@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body{
+  background-color: #e1dcc5;
+  width: 97%;
+}
+
+header#head{
+  width: 97.5%;
+  background-color: #333;
+  display: flex;
+  flex-direction:row ;
+  align-items:center ;
+  padding: 10px 5px 10px 30px;
+}
+
+img#logo1{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+a#name1{
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0px 0px 0px 5px;
+  }
+  img#logo1{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}</style>
+  <header id="head">
+    <a href="page 1.html"><img src="https://c.gitcoin.co/grants/cc8d06a5cb8368a631255c564e717511/library-logo.png" id="logo1"></a>
+    <h2 ><a href="page 1.html" id="name1">Reader</a></h2>
+</header>
+  <meta charset="utf-8">
+  <title>Book Gallery</title>
+</head>
+<body>
+  <h1 style="text-align: center; background-color: #333; color: white;margin: 0;">IT GALLERY BOOKS</h1>
+  <div id="bookGallery"></div>
+
+  <script>
+    // Sample book data (replace with your own book images and information)
+     books = [
+      { title: "Build Your Own Test Framework", imageUrl: "https://itbook.store/img/books/9781484292464.png", link: "https://itbook.store/books/9781484292464" },
+      { title: "Beginner's Guide to Streamlit with Python", imageUrl: "https://itbook.store/img/books/9781484289822.png", link: "https://itbook.store/books/9781484289822" },
+      { title: "Expert Performance Indexing in Azure SQL ", imageUrl: "https://itbook.store/img/books/9781484292143.png", link: "https://itbook.store/books/9781484292143" },
+      { title: "Pro Kotlin Web Apps from Scratch", imageUrl: "https://itbook.store/img/books/9781484290569.png", link: "https://itbook.store/books/9781484290569" },
+      { title: "Introducing Cisco Unified Computing System", imageUrl: "https://itbook.store/img/books/9781484289853.png", link: "https://itbook.store/books/9781484289853" },
+      { title: "Programming for Absolute Beginners", imageUrl: "https://itbook.store/img/books/9781484287507.png", link: "https://itbook.store/books/9781484287507" },
+      { title: "Firewalls Don't Stop Dragons, 5th Edition", imageUrl: "https://itbook.store/img/books/9781484290354.png", link: "https://itbook.store/books/9781484290354" },
+      { title: "Quantitative User Experience Research", imageUrl: "https://itbook.store/img/books/9781484292679.png", link: "https://itbook.store/books/9781484295137" },
+      { title: "Introduction to Software Testing", imageUrl: "https://itbook.store/img/books/9781484295137.png", link: "https://itbook.store/books/9781484295137" },
+      { title: "Spring 6 Recipes, 5th Edition", imageUrl: "https://itbook.store/img/books/9781484286487.png", link:"https://itbook.store/books/9781484286487" },
+    ];
+
+    // Create the gallery container
+    galleryContainer = document.createElement("div");
+    galleryContainer.style.display = "flex";
+    galleryContainer.style.justifyContent = "center";
+    galleryContainer.style.backgroundColor = "#f5f5f5";
+    galleryContainer.style.padding = "20px";
+    document.body.appendChild(galleryContainer);
+
+    // Create the gallery
+    bookGallery = document.getElementById("bookGallery");
+    bookGallery.style.display = "flex";
+    bookGallery.style.flexWrap = "wrap";
+    bookGallery.style.justifyContent = "center";
+    bookGallery.style.maxWidth = "90%";
+    bookGallery.style.margin = "0 auto";
+
+    // Function to create a book element
+    function createBookElement(book) {
+      bookElement = document.createElement("div");
+      bookElement.style.width = "200px";
+      bookElement.style.margin = "10px";
+      bookElement.style.padding = "10px";
+      bookElement.style.backgroundColor = "#fff";
+      bookElement.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
+
+      imageElement = document.createElement("img");
+      imageElement.style.maxWidth = "100%";
+      imageElement.style.height = "auto";
+      imageElement.src = book.imageUrl;
+      bookElement.appendChild(imageElement);
+
+      titleElement = document.createElement("p");
+      titleElement.textContent = book.title;
+      bookElement.appendChild(titleElement);
+
+      buttonElement = document.createElement("button");
+      buttonElement.textContent = "View Details";
+      buttonElement.addEventListener("click", () => {
+        window.location.href = book.link;
+      });
+      bookElement.appendChild(buttonElement);
+
+      return bookElement;
+    }
+
+    // Render book gallery
+    books.forEach(book => {
+       bookElement = createBookElement(book);
+      bookGallery.appendChild(bookElement);
+    });
+
+    galleryContainer.appendChild(bookGallery);
+  </script>
+</body>
+</html>

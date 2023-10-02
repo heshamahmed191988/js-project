@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+body {
+    background-color: #e1dcc5;
+}
+
+header#head {
+    width: auto;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 5px 10px 30px;
+}
+
+img#logo1 {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+a#name1 {
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0px 0px 0px 5px;
+}
+
+button#log-out {
+    display: flex;
+    font-size: 13px;
+    border: #fff;
+    border-radius: 10px;
+    padding: 7px;
+    margin-left: auto;
+    margin-right: 40px;
+    cursor: pointer;
+    color: #333;
+    background-color: #e1dcc5;
+    border: none;
+}
+
+button#log-out:hover {
+    color: #ffffff;
+    background-color: #333;
+    border: 2px solid #ffffff;
+}
+
+h2#b-sec {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #000000;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+
+div#big-div {
+    width: 900px;
+    height: 450px;
+    background-color: #333;
+    border: 2px #333;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 50px auto;
+}
+
+div#img1 {
+    width: 350px;
+    height: 360px;
+    background-color: #e1dcc5;
+    border: 20px #cc0404;
+    border-radius: 10px;
+    margin: 0px 20px 0px 0px;
+}
+
+img#history {
+    width: 300px;
+    border-radius: 10px;
+    margin: 55px 0 25px 0;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+div#img2 {
+    width: 350px;
+    height: 360px;
+    background-color: #e1dcc5;
+    border: 20px #cc0404;
+    border-radius: 10px;
+    margin: 0px 0px 0px 20px;
+}
+
+img#it {
+    width: 300px;
+    height: 203px;
+    border-radius: 10px;
+    margin: 55px 0 22px 0;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+a#h-books {
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+a#h-books:hover {
+    color: #333;
+}
+
+a#it-books {
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+a#it-books:hover {
+    color: #333;
+}
+
+.bg-modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 105%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contents {
+    height: 370px;
+    width: 450px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.parg {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#his-pop {
+    width: 100%;
+    height: 70%;
+}
+
+.model-it {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 105%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.it-content {
+    height: 370px;
+    width: 450px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#it-pop {
+    width: 100%;
+    height: 70%;
+}
